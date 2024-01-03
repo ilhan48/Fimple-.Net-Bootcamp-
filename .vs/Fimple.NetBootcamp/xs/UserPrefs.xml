@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{FD716619-0156-41F6-8235-75FA8D0CB5C8}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fimple.FinalCase.Domaiin/Fimple.FinalCase.Adapter.PostgreSQL/Class1.cs">
+    <Files>
+      <File FileName="Fimple.FinalCase.Domaiin/Class1.cs" Line="1" Column="1" />
+      <File FileName="Fimple.FinalCase.Domaiin/Fimple.FinalCase.Application/Class1.cs" Line="1" Column="1" />
+      <File FileName="Fimple.FinalCase.Domaiin/Fimple.FinalCase.Adapter.PostgreSQL/Class1.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Fimple.NetBootcamp" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.src.Fimple.FinalCase.Adapter.PostgreSQL FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.src.Core.Fimple.FinalCase.Application FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.src.Core.Fimple.FinalCase.Domaiin FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.src.Fimple.FinalCase.Adapter.WebAPI FirstBuild="True" PreferredExecutionTarget="/Applications/Arc.app" />
+</Properties>

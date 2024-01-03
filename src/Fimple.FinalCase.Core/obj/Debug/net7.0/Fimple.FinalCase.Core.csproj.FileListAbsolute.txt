@@ -1,0 +1,5 @@
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.csproj.AssemblyReference.cache
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.AssemblyInfoInputs.cache
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.AssemblyInfo.cs
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.csproj.CoreCompileInputs.cache
