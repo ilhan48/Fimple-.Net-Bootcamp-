@@ -39,8 +39,6 @@ public class UserService : IUserService
         ListUserDto? user = await _userRepository.GetAsync(
         predicate,
         include,
-        withDeleted,
-        enableTracking,
         cancellationToken
     );
     return user;
@@ -63,8 +61,6 @@ public class UserService : IUserService
             include,
             index,
             size,
-            withDeleted,
-            enableTracking,
             cancellationToken
         );
         return userList;

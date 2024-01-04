@@ -14,8 +14,6 @@ public interface IUserRepository
     Task<ListUserDto?> GetAsync(
         Expression<Func<ListUserDto, bool>> predicate,
         Func<IQueryable<ListUserDto>, IIncludableQueryable<ListUserDto, object>>? include = null,
-        bool withDeleted = false,
-        bool enableTracking = true,
         CancellationToken cancellationToken = default
     );
 
@@ -25,15 +23,11 @@ public interface IUserRepository
         Func<IQueryable<ListUserDto>, IIncludableQueryable<ListUserDto, object>>? include = null,
         int index = 0,
         int size = 10,
-        bool withDeleted = false,
-        bool enableTracking = true,
         CancellationToken cancellationToken = default
     );
 
     Task<bool> AnyAsync(
-        Expression<Func<User, bool>>? predicate = null,
-        bool withDeleted = false,
-        bool enableTracking = true,
+        Expression<Func<ListUserDto, bool>>? predicate = null,
         CancellationToken cancellationToken = default
     );
 }

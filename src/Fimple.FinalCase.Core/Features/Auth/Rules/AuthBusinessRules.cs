@@ -43,14 +43,14 @@ public class AuthBusinessRules
 
     public async Task UserEmailShouldBeNotExists(string email)
     {
-        bool doesExists = await _userRepository.AnyAsync(predicate: u => u.Email == email, enableTracking: false);
+        bool doesExists = await _userRepository.AnyAsync(predicate: u => u.Email == email);
         if (doesExists)
             throw new BusinessException(AuthMessages.UserMailAlreadyExists);
     }
 
     public async Task UserPasswordShouldBeMatch(int id, string password)
     {
-        ListUserDto? existsUser = await _userRepository.GetAsync(predicate: u => u.Id == id, enableTracking: false);
+        ListUserDto? existsUser = await _userRepository.GetAsync(predicate: u => u.Id == id);
         var user = _mapper.Map<User>(existsUser);
         await UserShouldBeExistsWhenSelected(user);
         if (!HashingHelper.VerifyPasswordHash(password, user!.PasswordHash, user.PasswordSalt))

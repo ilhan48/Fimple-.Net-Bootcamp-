@@ -2,7 +2,7 @@ using Fimple.FinalCase.Adapter.PostgreSQL.Contexts;
 
 namespace Fimple.FinalCase.Adapter.PostgreSQL;
 
-public class UnitOfWork
+public class UnitOfWork : IUnitOfWork
 {
     private readonly ApplicationDbContext _applicationDbContext;
 

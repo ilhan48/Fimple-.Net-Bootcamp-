@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using Fimple.FinalCase.Adapter.PostgreSQL;
 using Fimple.FinalCase.Core.Entities.Common;
 using Fimple.FinalCase.Core.Ports.Driven.Common;
 using Fimple.FinalCase.Core.Utilities.Paging;
@@ -12,10 +13,12 @@ public class EfRepositoryBase<TEntity, TContext> : IAsyncRepository<TEntity>
     where TContext : DbContext
 {
     protected readonly TContext Context;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public EfRepositoryBase(TContext context)
+    public EfRepositoryBase(TContext context, IUnitOfWork unitOfWork )
     {
         Context = context;
+        _unitOfWork = unitOfWork;
     }
 
     public IQueryable<TEntity> Query() => Context.Set<TEntity>();
@@ -23,21 +26,21 @@ public class EfRepositoryBase<TEntity, TContext> : IAsyncRepository<TEntity>
     public async Task<TEntity> AddAsync(TEntity entity)
     {
         await Context.AddAsync(entity);
-        await Context.SaveChangesAsync();
+        await _unitOfWork.SaveChangesAsync(cancellationToken: default);
         return entity;
     }
 
     public async Task<TEntity> UpdateAsync(TEntity entity)
     {
         Context.Update(entity);
-        await Context.SaveChangesAsync();
+        await _unitOfWork.SaveChangesAsync(cancellationToken: default);
         return entity;
     }
 
     public async Task<TEntity> DeleteAsync(TEntity entity)
     {
         Context.Remove(entity);
-        await Context.SaveChangesAsync();
+        await _unitOfWork.SaveChangesAsync(cancellationToken: default);
         return entity;
     }
 
