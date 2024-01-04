@@ -1,0 +1,12 @@
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.csproj.AssemblyReference.cache
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.AssemblyInfoInputs.cache
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.AssemblyInfo.cs
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.csproj.CoreCompileInputs.cache
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/bin/Debug/net7.0/Fimple.FinalCase.Core.deps.json
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/bin/Debug/net7.0/Fimple.FinalCase.Core.dll
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/bin/Debug/net7.0/Fimple.FinalCase.Core.pdb
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.dll
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/refint/Fimple.FinalCase.Core.dll
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/Fimple.FinalCase.Core.pdb
+/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/Debug/net7.0/ref/Fimple.FinalCase.Core.dll

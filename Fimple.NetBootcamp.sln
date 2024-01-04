@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7685E08D-B7F4-4146-A18A-95E8FE88BEA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fimple.FinalCase.Core", "src\Fimple.FinalCase.Core\Fimple.FinalCase.Core.csproj", "{607F176F-B8B6-4654-AFD9-9E8B41FA94F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AA97A515-A0A6-4F19-B2FF-8FDBF5DA54FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fimple.FinalCase.Core.Tests", "test\Fimple.FinalCase.Core.Tests\Fimple.FinalCase.Core.Tests.csproj", "{46E83BAD-C0FD-4ED8-85AE-779ACD475B04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fimple.FinalCase.Adapter.PostgreSQL", "src\Fimple.FinalCase.Adapter.PostgreSQL\Fimple.FinalCase.Adapter.PostgreSQL.csproj", "{DE80AEEF-3727-483E-8428-A72BEA579F0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fimple.FinalCase.Adapter.PostgreSQL.Tests", "test\Fimple.FinalCase.Adapter.PostgreSQL.Tests\Fimple.FinalCase.Adapter.PostgreSQL.Tests.csproj", "{E37BCBE7-2873-4501-B5D7-7CE2139142CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fimple.FinalCase.Adapter.WebAPI", "src\Fimple.FinalCase.Adapter.WebAPI\Fimple.FinalCase.Adapter.WebAPI.csproj", "{FD716619-0156-41F6-8235-75FA8D0CB5C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fimple.FinalCase.Adapter.WebAPI.Tests", "test\Fimple.FinalCase.Adapter.WebAPI.Tests\Fimple.FinalCase.Adapter.WebAPI.Tests.csproj", "{A11554E1-C15E-4B15-87B3-41407B95D6BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{607F176F-B8B6-4654-AFD9-9E8B41FA94F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607F176F-B8B6-4654-AFD9-9E8B41FA94F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607F176F-B8B6-4654-AFD9-9E8B41FA94F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607F176F-B8B6-4654-AFD9-9E8B41FA94F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E83BAD-C0FD-4ED8-85AE-779ACD475B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E83BAD-C0FD-4ED8-85AE-779ACD475B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E83BAD-C0FD-4ED8-85AE-779ACD475B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E83BAD-C0FD-4ED8-85AE-779ACD475B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE80AEEF-3727-483E-8428-A72BEA579F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE80AEEF-3727-483E-8428-A72BEA579F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE80AEEF-3727-483E-8428-A72BEA579F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE80AEEF-3727-483E-8428-A72BEA579F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E37BCBE7-2873-4501-B5D7-7CE2139142CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E37BCBE7-2873-4501-B5D7-7CE2139142CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E37BCBE7-2873-4501-B5D7-7CE2139142CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E37BCBE7-2873-4501-B5D7-7CE2139142CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD716619-0156-41F6-8235-75FA8D0CB5C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD716619-0156-41F6-8235-75FA8D0CB5C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD716619-0156-41F6-8235-75FA8D0CB5C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD716619-0156-41F6-8235-75FA8D0CB5C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A11554E1-C15E-4B15-87B3-41407B95D6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A11554E1-C15E-4B15-87B3-41407B95D6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A11554E1-C15E-4B15-87B3-41407B95D6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A11554E1-C15E-4B15-87B3-41407B95D6BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{607F176F-B8B6-4654-AFD9-9E8B41FA94F0} = {7685E08D-B7F4-4146-A18A-95E8FE88BEA7}
+		{46E83BAD-C0FD-4ED8-85AE-779ACD475B04} = {AA97A515-A0A6-4F19-B2FF-8FDBF5DA54FE}
+		{DE80AEEF-3727-483E-8428-A72BEA579F0C} = {7685E08D-B7F4-4146-A18A-95E8FE88BEA7}
+		{E37BCBE7-2873-4501-B5D7-7CE2139142CD} = {AA97A515-A0A6-4F19-B2FF-8FDBF5DA54FE}
+		{FD716619-0156-41F6-8235-75FA8D0CB5C8} = {7685E08D-B7F4-4146-A18A-95E8FE88BEA7}
+		{A11554E1-C15E-4B15-87B3-41407B95D6BA} = {AA97A515-A0A6-4F19-B2FF-8FDBF5DA54FE}
+	EndGlobalSection
+EndGlobal
