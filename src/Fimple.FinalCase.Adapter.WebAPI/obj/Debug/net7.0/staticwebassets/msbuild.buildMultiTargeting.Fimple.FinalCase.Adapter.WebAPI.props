@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/Fimple.FinalCase.Adapter.WebAPI.props" />
-</Project>
