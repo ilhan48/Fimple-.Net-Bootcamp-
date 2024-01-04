@@ -1,3 +1,6 @@
+using Fimple.FinalCase.Core.Features.Users.Commands.Update;
+using MediatR;
+
 namespace Fimple.FinalCase.Core.DTOs;
 public class UpdateUserDto
 {
