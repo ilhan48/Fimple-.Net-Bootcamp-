@@ -6,9 +6,9 @@ namespace Fimple.FinalCase.Core.Entities;
 
 public class Transfer : BaseAuditableEntity<int>
 {
-    [ForeignKey(nameof(Account))]
+    [ForeignKey(nameof(SenderAccount))]
     public int SenderAccountId { get; set; }
-    [ForeignKey(nameof(Account))]
+    [ForeignKey(nameof(ReceiverAccount))]
     public int ReceiverAccountId { get; set; }
     
     public decimal Amount { get; set; }

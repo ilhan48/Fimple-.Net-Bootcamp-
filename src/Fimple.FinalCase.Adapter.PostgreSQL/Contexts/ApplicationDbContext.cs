@@ -19,6 +19,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<PaymentPlan> PaymentPlans { get; set; }
     public DbSet<Process> Processes { get; set; }
     public DbSet<Transfer> Transfers { get; set; }
+    public DbSet<SupportTicket> SupportTickets { get; set; }
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration configuration) : base(options)
     {
