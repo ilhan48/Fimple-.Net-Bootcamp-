@@ -1,0 +1,12 @@
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\bin\Release\net7.0\Fimple.FinalCase.Core.deps.json
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\bin\Release\net7.0\Fimple.FinalCase.Core.dll
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\bin\Release\net7.0\Fimple.FinalCase.Core.pdb
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\obj\Release\net7.0\Fimple.FinalCase.Core.csproj.AssemblyReference.cache
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\obj\Release\net7.0\Fimple.FinalCase.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\obj\Release\net7.0\Fimple.FinalCase.Core.AssemblyInfoInputs.cache
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\obj\Release\net7.0\Fimple.FinalCase.Core.AssemblyInfo.cs
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\obj\Release\net7.0\Fimple.FinalCase.Core.csproj.CoreCompileInputs.cache
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\obj\Release\net7.0\Fimple.FinalCase.Core.dll
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\obj\Release\net7.0\refint\Fimple.FinalCase.Core.dll
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\obj\Release\net7.0\Fimple.FinalCase.Core.pdb
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Core\obj\Release\net7.0\ref\Fimple.FinalCase.Core.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Fimple.FinalCase.Adapter.WebAPI.props" />
+</Project>

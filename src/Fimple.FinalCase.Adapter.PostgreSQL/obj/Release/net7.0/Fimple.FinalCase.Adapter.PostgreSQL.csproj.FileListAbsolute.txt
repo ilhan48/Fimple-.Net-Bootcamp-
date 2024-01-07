@@ -1,0 +1,17 @@
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\bin\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.deps.json
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\bin\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.runtimeconfig.json
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\bin\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.dll
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\bin\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.pdb
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\bin\Release\net7.0\Fimple.FinalCase.Core.dll
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\bin\Release\net7.0\Fimple.FinalCase.Core.pdb
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.csproj.AssemblyReference.cache
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.AssemblyInfoInputs.cache
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.AssemblyInfo.cs
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.csproj.CoreCompileInputs.cache
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.csproj.CopyComplete
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.dll
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\refint\Fimple.FinalCase.Adapter.PostgreSQL.dll
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.pdb
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\Fimple.FinalCase.Adapter.PostgreSQL.genruntimeconfig.cache
+C:\Users\ilhan\Desktop\Fimple.FinalCase\src\Fimple.FinalCase.Adapter.PostgreSQL\obj\Release\net7.0\ref\Fimple.FinalCase.Adapter.PostgreSQL.dll

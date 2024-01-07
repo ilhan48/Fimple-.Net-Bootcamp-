@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6n4wf2wwOGVWM0Yc0jFNtGoQ0uP8OyGiKsfX62iGkJWG7sbgB6iommJmNFxX3S4h/wDunxyb8MGw6evgC3MCfA==",
+  "dgSpecHash": "FBR5OoMFqoC/ghIZ47HUuMBPwKX/l8RgcGyjuR587io7TylwvVxYj2QYiHwWbBLN8ysQW5uWaIY/v3cNKq5GKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Adapter.WebAPI\\Fimple.FinalCase.Adapter.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -94,6 +94,7 @@
     "C:\\Users\\ilhan\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\ilhan\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\ilhan\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\ilhan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\ilhan\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\ilhan\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\ilhan\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",

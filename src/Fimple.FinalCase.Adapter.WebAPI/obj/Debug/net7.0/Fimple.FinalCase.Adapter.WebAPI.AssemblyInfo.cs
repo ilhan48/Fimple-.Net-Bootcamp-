@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("78fa3066-40da-4e53-8b7d-2fc755ba5824")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fimple.FinalCase.Adapter.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33361e5347060c9357b9d2bfc461f463e568e695")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e6230c99eabe1b233be6c880314e593fda72e48")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fimple.FinalCase.Adapter.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fimple.FinalCase.Adapter.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
