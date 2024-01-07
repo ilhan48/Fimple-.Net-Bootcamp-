@@ -5,7 +5,7 @@ using static Fimple.FinalCase.Core.Features.Users.Constants.UsersOperationClaims
 
 namespace Fimple.FinalCase.Core.Features.Users.Commands.Update;
 
-public partial class UpdateUserCommand : IRequest<UpdatedUserResponse>, ISecuredRequest
+public class UpdateUserCommand : IRequest<UpdatedUserResponse>, ISecuredRequest
 {
     public int Id { get; set; }
     public string FirstName { get; set; }

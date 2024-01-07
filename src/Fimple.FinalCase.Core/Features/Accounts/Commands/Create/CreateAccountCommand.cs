@@ -1,3 +1,4 @@
+using Fimple.FinalCase.Core.Features.Accounts.Constants;
 using Fimple.FinalCase.Core.Utilities.Authorization;
 using MediatR;
 using static Fimple.FinalCase.Core.Features.Accounts.Constants.AccountsOperationClaims;
@@ -8,6 +9,5 @@ public class CreateAccountCommand : IRequest<CreatedAccountResponse>, ISecuredRe
 {
     public int UserId { get; set; }
     public decimal Balance { get; set; }
-    public string AccountNumber { get; set; }
-    public string[] Roles => new[] { Admin, Write, Read };
+    public string[] Roles => new[] { Admin, AccountsOperationClaims.Create };
 }

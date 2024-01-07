@@ -10,4 +10,6 @@ public static class AccountsOperationClaims
     public const string Create = "Accounts.Create";
     public const string Update = "Accounts.Update";
     public const string Delete = "Accounts.Delete";
+    public const string GetBalanceInformation = "Accounts.GetBalanceInformation";
+    public const string UpdateBalance = "Accounts.UpdateBalance";
 }

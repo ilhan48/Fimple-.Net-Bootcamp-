@@ -1,6 +1,8 @@
+using Fimple.FinalCase.Core.Utilities.Responses;
+
 namespace Fimple.FinalCase.Core.Features.Users.Queries.GetById;
 
-public class GetByIdUserResponse 
+public class GetByIdUserResponse : IResponse
 {
     public int Id { get; set; }
     public string FirstName { get; set; }

@@ -1,10 +1,10 @@
-using AutoMapper;
-using Fimple.FinalCase.Core.Entities.Identity;
 using Fimple.FinalCase.Core.Features.UserOperationClaims.Commands.Create;
 using Fimple.FinalCase.Core.Features.UserOperationClaims.Commands.Delete;
 using Fimple.FinalCase.Core.Features.UserOperationClaims.Commands.Update;
 using Fimple.FinalCase.Core.Features.UserOperationClaims.Queries.GetById;
 using Fimple.FinalCase.Core.Features.UserOperationClaims.Queries.GetList;
+using AutoMapper;
+using Fimple.FinalCase.Core.Entities.Identity;
 using Fimple.FinalCase.Core.Utilities.Paging;
 
 namespace Fimple.FinalCase.Core.Features.UserOperationClaims.Profiles;

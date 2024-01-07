@@ -1,4 +1,4 @@
-using Fimple.FinalCase.Core.Features.UserOperationClaims.Commands.Create;
+﻿using Fimple.FinalCase.Core.Features.UserOperationClaims.Commands.Create;
 using Fimple.FinalCase.Core.Features.UserOperationClaims.Commands.Delete;
 using Fimple.FinalCase.Core.Features.UserOperationClaims.Commands.Update;
 using Fimple.FinalCase.Core.Features.UserOperationClaims.Queries.GetById;
@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Fimple.FinalCase.Adapter.WebAPI.Controllers;
 
-[Route("api/v1/[controller]")]
+[Route("api/[controller]")]
 [ApiController]
 public class UserOperationClaimsController : BaseController
 {

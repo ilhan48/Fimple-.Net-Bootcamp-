@@ -3,10 +3,11 @@ using Fimple.FinalCase.Core.Features.Auth.Constants;
 using Fimple.FinalCase.Core.Ports.Driven;
 using Fimple.FinalCase.Core.Utilities.Exceptions.Types;
 using Fimple.FinalCase.Core.Utilities.Hashing;
+using Fimple.FinalCase.Core.Utilities.Rules;
 
 namespace Fimple.FinalCase.Core.Features.Users.Rules;
 
-public class UserBusinessRules
+public class UserBusinessRules : BaseBusinessRules
 {
     private readonly IUserRepository _userRepository;
 
@@ -24,7 +25,7 @@ public class UserBusinessRules
 
     public async Task UserIdShouldBeExistsWhenSelected(int id)
     {
-        bool doesExist = await _userRepository.AnyAsync(predicate: u => u.Id == id);
+        bool doesExist = await _userRepository.AnyAsync(predicate: u => u.Id == id, enableTracking: false);
         if (doesExist)
             throw new BusinessException(AuthMessages.UserDontExists);
     }
@@ -38,14 +39,14 @@ public class UserBusinessRules
 
     public async Task UserEmailShouldNotExistsWhenInsert(string email)
     {
-        bool doesExists = await _userRepository.AnyAsync(predicate: u => u.Email == email);
+        bool doesExists = await _userRepository.AnyAsync(predicate: u => u.Email == email, enableTracking: false);
         if (doesExists)
             throw new BusinessException(AuthMessages.UserMailAlreadyExists);
     }
 
     public async Task UserEmailShouldNotExistsWhenUpdate(int id, string email)
     {
-        bool doesExists = await _userRepository.AnyAsync(predicate: u => u.Id != id && u.Email == email);
+        bool doesExists = await _userRepository.AnyAsync(predicate: u => u.Id != id && u.Email == email, enableTracking: false);
         if (doesExists)
             throw new BusinessException(AuthMessages.UserMailAlreadyExists);
     }

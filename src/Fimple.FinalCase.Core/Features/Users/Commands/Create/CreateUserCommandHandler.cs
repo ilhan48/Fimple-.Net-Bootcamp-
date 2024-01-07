@@ -1,21 +1,40 @@
-using Fimple.FinalCase.Core.Ports.Driving;
+﻿using AutoMapper;
+using Fimple.FinalCase.Core.Entities.Identity;
+using Fimple.FinalCase.Core.Features.Users.Rules;
+using Fimple.FinalCase.Core.Ports.Driven;
+using Fimple.FinalCase.Core.Utilities.Hashing;
 using MediatR;
 
 namespace Fimple.FinalCase.Core.Features.Users.Commands.Create;
 
 public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, CreatedUserResponse>
 {
-    private readonly IUserService _userService;
+    private readonly IUserRepository _userRepository;
+    private readonly IMapper _mapper;
+    private readonly UserBusinessRules _userBusinessRules;
 
-    public CreateUserCommandHandler(IUserService userService)
+    public CreateUserCommandHandler(IUserRepository userRepository, IMapper mapper, UserBusinessRules userBusinessRules)
     {
-        _userService = userService;
+        _userRepository = userRepository;
+        _mapper = mapper;
+        _userBusinessRules = userBusinessRules;
     }
 
     public async Task<CreatedUserResponse> Handle(CreateUserCommand request, CancellationToken cancellationToken)
     {
-        CreatedUserResponse response = await _userService.AddAsync(request);
-        return response;    
+        await _userBusinessRules.UserEmailShouldNotExistsWhenInsert(request.Email);
+        User user = _mapper.Map<User>(request);
+
+        HashingHelper.CreatePasswordHash(
+            request.Password,
+            passwordHash: out byte[] passwordHash,
+            passwordSalt: out byte[] passwordSalt
+        );
+        user.PasswordHash = passwordHash;
+        user.PasswordSalt = passwordSalt;
+        User createdUser = await _userRepository.AddAsync(user);
+
+        CreatedUserResponse response = _mapper.Map<CreatedUserResponse>(createdUser);
+        return response;
     }
 }
-

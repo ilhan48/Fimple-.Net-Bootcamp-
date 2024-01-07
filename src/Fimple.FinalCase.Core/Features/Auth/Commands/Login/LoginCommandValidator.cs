@@ -1,5 +1,4 @@
-﻿using Fimple.FinalCase.Core.Features.Auth.Commands.Login;
-using FluentValidation;
+﻿using FluentValidation;
 
 namespace Fimple.FinalCase.Core.Features.Auth.Commands.Login;
 

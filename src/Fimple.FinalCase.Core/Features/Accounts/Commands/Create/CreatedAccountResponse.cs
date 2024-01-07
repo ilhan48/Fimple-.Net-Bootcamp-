@@ -1,7 +1,10 @@
+using Fimple.FinalCase.Core.Utilities.Responses;
+
 namespace Fimple.FinalCase.Core.Features.Accounts.Commands.Create;
 
-public class CreatedAccountResponse
+public class CreatedAccountResponse : IResponse
 {
-    
-    public string AccountNumber { get; set; }
+    public int Id { get; set; }
+    public int UserId { get; set; }
+    public decimal Balance { get; set; }
 }

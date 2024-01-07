@@ -28,4 +28,5 @@ public class CreateUserCommand : IRequest<CreatedUserResponse>, ISecuredRequest
     }
 
     public string[] Roles => new[] { Admin, Write, Add };
+
 }

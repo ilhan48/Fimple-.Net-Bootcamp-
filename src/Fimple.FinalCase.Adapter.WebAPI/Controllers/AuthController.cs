@@ -1,4 +1,4 @@
-using Fimple.FinalCase.Core.DTOs.Auth;
+﻿using Fimple.FinalCase.Core.DTOs.Auth;
 using Fimple.FinalCase.Core.Entities.Identity;
 using Fimple.FinalCase.Core.Features.Auth.Commands.Login;
 using Fimple.FinalCase.Core.Features.Auth.Commands.RefreshToken;
@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Fimple.FinalCase.Adapter.WebAPI.Controllers;
 
-[Route("api/v1/[controller]")]
+[Route("api/[controller]")]
 [ApiController]
 public class AuthController : BaseController
 {

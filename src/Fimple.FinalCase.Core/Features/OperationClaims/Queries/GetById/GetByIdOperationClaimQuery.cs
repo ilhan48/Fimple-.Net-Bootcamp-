@@ -1,9 +1,9 @@
-using AutoMapper;
-using Fimple.FinalCase.Core.Entities.Identity;
 using Fimple.FinalCase.Core.Features.OperationClaims.Rules;
-using Fimple.FinalCase.Core.Ports.Driven;
+using AutoMapper;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Fimple.FinalCase.Core.Ports.Driven;
+using Fimple.FinalCase.Core.Entities.Identity;
 
 namespace Fimple.FinalCase.Core.Features.OperationClaims.Queries.GetById;
 

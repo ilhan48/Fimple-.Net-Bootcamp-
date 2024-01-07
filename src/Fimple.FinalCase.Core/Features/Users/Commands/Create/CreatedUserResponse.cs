@@ -1,6 +1,8 @@
+using Fimple.FinalCase.Core.Utilities.Responses;
+
 namespace Fimple.FinalCase.Core.Features.Users.Commands.Create;
 
-public class CreatedUserResponse
+public class CreatedUserResponse : IResponse
 {
     public int Id { get; set; }
     public string FirstName { get; set; }

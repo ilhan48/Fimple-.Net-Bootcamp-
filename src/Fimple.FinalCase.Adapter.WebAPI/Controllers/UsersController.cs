@@ -1,4 +1,4 @@
-using Fimple.FinalCase.Core.Features.Users.Commands.Create;
+﻿using Fimple.FinalCase.Core.Features.Users.Commands.Create;
 using Fimple.FinalCase.Core.Features.Users.Commands.Delete;
 using Fimple.FinalCase.Core.Features.Users.Commands.Update;
 using Fimple.FinalCase.Core.Features.Users.Commands.UpdateFromAuth;
@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Fimple.FinalCase.Adapter.WebAPI.Controllers;
 
-[Route("api/v1/[controller]")]
+[Route("api/[controller]")]
 [ApiController]
 public class UsersController : BaseController
 {
@@ -28,7 +28,7 @@ public class UsersController : BaseController
         return Ok(result);
     }
 
-    [HttpGet("api/users")]
+    [HttpGet]
     public async Task<IActionResult> GetList([FromQuery] PageRequest pageRequest)
     {
         GetListUserQuery getListUserQuery = new() { PageRequest = pageRequest };
@@ -36,14 +36,14 @@ public class UsersController : BaseController
         return Ok(result);
     }
 
-    [HttpPost("api/users")]
+    [HttpPost]
     public async Task<IActionResult> Add([FromBody] CreateUserCommand createUserCommand)
     {
         CreatedUserResponse result = await Mediator.Send(createUserCommand);
         return Created(uri: "", result);
     }
 
-    [HttpPut("api/users")]
+    [HttpPut]
     public async Task<IActionResult> Update([FromBody] UpdateUserCommand updateUserCommand)
     {
         UpdatedUserResponse result = await Mediator.Send(updateUserCommand);
@@ -58,7 +58,7 @@ public class UsersController : BaseController
         return Ok(result);
     }
 
-    [HttpDelete("api/users")]
+    [HttpDelete]
     public async Task<IActionResult> Delete([FromBody] DeleteUserCommand deleteUserCommand)
     {
         DeletedUserResponse result = await Mediator.Send(deleteUserCommand);

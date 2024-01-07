@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Fimple.FinalCase.Adapter.WebAPI.Tests
-build_property.ProjectDir = /Users/ilhanodun/Desktop/Fimple.NetBootcamp/test/Fimple.FinalCase.Adapter.WebAPI.Tests/
+build_property.ProjectDir = C:\Users\ilhan\Desktop\Fimple.FinalCase\test\Fimple.FinalCase.Adapter.WebAPI.Tests\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

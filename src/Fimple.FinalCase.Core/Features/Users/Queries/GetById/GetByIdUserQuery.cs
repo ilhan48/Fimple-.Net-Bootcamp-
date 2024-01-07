@@ -1,5 +1,4 @@
 using AutoMapper;
-using Fimple.FinalCase.Core.DTOs;
 using Fimple.FinalCase.Core.Entities.Identity;
 using Fimple.FinalCase.Core.Features.Users.Rules;
 using Fimple.FinalCase.Core.Ports.Driven;
@@ -26,9 +25,8 @@ public class GetByIdUserQuery : IRequest<GetByIdUserResponse>
 
         public async Task<GetByIdUserResponse> Handle(GetByIdUserQuery request, CancellationToken cancellationToken)
         {
-            ListUserDto? user = await _userRepository.GetAsync(predicate: b => b.Id == request.Id, cancellationToken: cancellationToken);
-            User checkRule = _mapper.Map<User>(user);
-            await _userBusinessRules.UserShouldBeExistsWhenSelected(checkRule);
+            User? user = await _userRepository.GetAsync(predicate: b => b.Id == request.Id, cancellationToken: cancellationToken);
+            await _userBusinessRules.UserShouldBeExistsWhenSelected(user);
 
             GetByIdUserResponse response = _mapper.Map<GetByIdUserResponse>(user);
             return response;

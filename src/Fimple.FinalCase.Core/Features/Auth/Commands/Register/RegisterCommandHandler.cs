@@ -36,7 +36,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Registere
                 passwordHash: out byte[] passwordHash,
                 passwordSalt: out byte[] passwordSalt
             );
-            CreateUserDto newUser =
+            User newUser =
                 new()
                 {
                     Email = request.UserForRegisterDto.Email,
@@ -46,11 +46,11 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Registere
                     PasswordSalt = passwordSalt,
                     Status = true
                 };
-            CreateUserDto addUser = await _userRepository.AddAsync(newUser);
-            var createdUser = _mapper.Map<User>(addUser);
-            AccessToken createdAccessToken = await _authService.CreateAccessToken(createdUser);
 
-            Entities.Identity.RefreshToken createdRefreshToken = await _authService.CreateRefreshToken(createdUser, request.IpAddress);
+            User addUser = await _userRepository.AddAsync(newUser);
+            AccessToken createdAccessToken = await _authService.CreateAccessToken(addUser);
+
+            Entities.Identity.RefreshToken createdRefreshToken = await _authService.CreateRefreshToken(addUser, request.IpAddress);
             Entities.Identity.RefreshToken addedRefreshToken = await _authService.AddRefreshToken(createdRefreshToken);
 
             RegisteredResponse registeredResponse = new() { AccessToken = createdAccessToken, RefreshToken = addedRefreshToken };

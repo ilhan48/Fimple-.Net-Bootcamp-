@@ -1,14 +1,14 @@
 using AutoMapper;
-using Fimple.FinalCase.Core.DTOs;
 using Fimple.FinalCase.Core.Entities.Identity;
 using Fimple.FinalCase.Core.Features.Users.Commands.Create;
 using Fimple.FinalCase.Core.Features.Users.Commands.Delete;
 using Fimple.FinalCase.Core.Features.Users.Commands.Update;
 using Fimple.FinalCase.Core.Features.Users.Commands.UpdateFromAuth;
 using Fimple.FinalCase.Core.Features.Users.Queries.GetById;
+using Fimple.FinalCase.Core.Features.Users.Queries.GetList;
 using Fimple.FinalCase.Core.Utilities.Paging;
 
-namespace Fimple.FinalCase.Core.Features.Users.Profiles;
+namespace Application.Features.Users.Profiles;
 
 public class MappingProfiles : Profile
 {
@@ -23,7 +23,7 @@ public class MappingProfiles : Profile
         CreateMap<User, DeleteUserCommand>().ReverseMap();
         CreateMap<User, DeletedUserResponse>().ReverseMap();
         CreateMap<User, GetByIdUserResponse>().ReverseMap();
-        CreateMap<User, ListUserDto>().ReverseMap();
-        CreateMap<IPaginate<User>, GetListResponse<ListUserDto>>().ReverseMap();
+        CreateMap<User, GetListUserListItemDto>().ReverseMap();
+        CreateMap<IPaginate<User>, GetListResponse<GetListUserListItemDto>>().ReverseMap();
     }
 }

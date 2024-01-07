@@ -4,9 +4,11 @@ using MediatR;
 using static Fimple.FinalCase.Core.Features.Users.Constants.UsersOperationClaims;
 
 namespace Fimple.FinalCase.Core.Features.Users.Commands.Delete;
-public partial class DeleteUserCommand : IRequest<DeletedUserResponse>, ISecuredRequest
+
+public class DeleteUserCommand : IRequest<DeletedUserResponse>, ISecuredRequest
 {
     public int Id { get; set; }
 
     public string[] Roles => new[] { Admin, Write, UsersOperationClaims.Delete };
+
 }

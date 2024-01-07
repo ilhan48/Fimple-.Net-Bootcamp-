@@ -10,8 +10,9 @@ public class UserOperationClaim : BaseAuditableEntity<int>
     public virtual User User { get; set; } = null!;
     public virtual OperationClaim OperationClaim { get; set; } = null!;
 
-    public UserOperationClaim(int userId, int operationClaimId)
+    public UserOperationClaim(int id, int userId, int operationClaimId) 
     {
+        Id = id;
         UserId = userId;
         OperationClaimId = operationClaimId;
     }

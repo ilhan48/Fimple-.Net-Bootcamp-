@@ -6,11 +6,11 @@ namespace Fimple.FinalCase.Core.Entities;
 
 public class Account : BaseAuditableEntity<int>
 {
-    [ForeignKey(nameof(Identity.User))]
+    [ForeignKey(nameof(User))]
     public int UserId { get; set; }
     public decimal Balance { get; set; }
 
     public virtual User User { get; set; }
-    public virtual ICollection<Process> Processes  { get; set; }
+    public virtual ICollection<Process> Processes { get; set; }
     public virtual ICollection<Transfer> Transfers { get; set; }
 }

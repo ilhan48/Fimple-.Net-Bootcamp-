@@ -5,6 +5,7 @@ using Fimple.FinalCase.Core.Utilities.Paging;
 using MediatR;
 
 namespace Fimple.FinalCase.Core.Features.OperationClaims.Queries.GetList;
+
 public class GetListOperationClaimQuery : IRequest<GetListResponse<GetListOperationClaimListItemDto>>
 {
     public PageRequest PageRequest { get; set; }

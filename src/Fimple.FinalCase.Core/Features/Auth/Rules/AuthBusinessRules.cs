@@ -1,23 +1,19 @@
-using AutoMapper;
-using Fimple.FinalCase.Core.DTOs;
 using Fimple.FinalCase.Core.Entities.Identity;
 using Fimple.FinalCase.Core.Features.Auth.Constants;
 using Fimple.FinalCase.Core.Ports.Driven;
 using Fimple.FinalCase.Core.Utilities.Exceptions.Types;
 using Fimple.FinalCase.Core.Utilities.Hashing;
-using Fimple.FinalCase.Core.Utilities.JWT;
+using Fimple.FinalCase.Core.Utilities.Rules;
 
 namespace Fimple.FinalCase.Core.Features.Auth.Rules;
 
-public class AuthBusinessRules
+public class AuthBusinessRules : BaseBusinessRules
 {
     private readonly IUserRepository _userRepository;
-    private readonly IMapper _mapper;
 
-    public AuthBusinessRules(IUserRepository userRepository, IMapper mapper)
+    public AuthBusinessRules(IUserRepository userRepository)
     {
         _userRepository = userRepository;
-        _mapper = mapper;
     }
 
     public Task UserShouldBeExistsWhenSelected(User? user)
@@ -43,15 +39,14 @@ public class AuthBusinessRules
 
     public async Task UserEmailShouldBeNotExists(string email)
     {
-        bool doesExists = await _userRepository.AnyAsync(predicate: u => u.Email == email);
+        bool doesExists = await _userRepository.AnyAsync(predicate: u => u.Email == email, enableTracking: false);
         if (doesExists)
             throw new BusinessException(AuthMessages.UserMailAlreadyExists);
     }
 
     public async Task UserPasswordShouldBeMatch(int id, string password)
     {
-        ListUserDto? existsUser = await _userRepository.GetAsync(predicate: u => u.Id == id);
-        var user = _mapper.Map<User>(existsUser);
+        User? user = await _userRepository.GetAsync(predicate: u => u.Id == id, enableTracking: false);
         await UserShouldBeExistsWhenSelected(user);
         if (!HashingHelper.VerifyPasswordHash(password, user!.PasswordHash, user.PasswordSalt))
             throw new BusinessException(AuthMessages.PasswordDontMatch);

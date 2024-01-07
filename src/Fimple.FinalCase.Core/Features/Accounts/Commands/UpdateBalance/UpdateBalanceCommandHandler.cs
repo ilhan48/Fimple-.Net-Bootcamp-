@@ -1,26 +1,31 @@
-using AutoMapper;
-using Fimple.FinalCase.Core.Entities;
 using Fimple.FinalCase.Core.Features.Accounts.Rules;
-using Fimple.FinalCase.Core.Ports.Driving;
+using AutoMapper;
 using MediatR;
+using Fimple.FinalCase.Core.Ports.Driven;
+using Fimple.FinalCase.Core.Entities;
 
 namespace Fimple.FinalCase.Core.Features.Accounts.Commands.UpdateBalance;
 
-public class UpdateBalanceCommandHandler : IRequestHandler<UpdateBalanceCommand, UpdatedBalanceResponse>
-{
-    private readonly IAccountService _accountService;
-    private readonly AccountBusinessRules _businessRules;
-    private readonly IMapper _mapper;
+public class UpdateBalanceCommandHandler : IRequestHandler<UpdateBalanceCommand, UpdateBalanceResponse>
+    {
+        private readonly IMapper _mapper;
+        private readonly IAccountRepository _accountRepository;
+        private readonly AccountBusinessRules _accountBusinessRules;
 
-    public UpdateBalanceCommandHandler(IAccountService accountService, AccountBusinessRules accountBusinessRules, IMapper mapper)
-    {
-        _accountService = accountService;
-        _accountService = accountService;
-        _mapper = mapper;
+        public UpdateBalanceCommandHandler(IAccountRepository accountRepository, IMapper mapper, AccountBusinessRules accountBusinessRules)
+        {
+            _mapper = mapper;
+            _accountRepository = accountRepository;
+            _accountBusinessRules = accountBusinessRules;
+        }
+
+        public async Task<UpdateBalanceResponse> Handle(UpdateBalanceCommand request, CancellationToken cancellationToken)
+        {
+            Account? account = await _accountRepository.GetAsync(predicate: a => a.Id == request.AccountId, cancellationToken: cancellationToken);
+            account.Balance = request.Balance;
+            _accountBusinessRules.CheckNegativeBalance(account);
+            var updatedAccount = _accountRepository.UpdateAsync(account!);
+            UpdateBalanceResponse response = _mapper.Map<UpdateBalanceResponse>(updatedAccount);
+            return response;
+        }
     }
-    public async Task<UpdatedBalanceResponse> Handle(UpdateBalanceCommand request, CancellationToken cancellationToken)
-    {
-        var updatedBalance = await _accountService.UpdateBalanceAsync(request.Id, request.NewBalance);
-        return _mapper.Map<UpdatedBalanceResponse>(updatedBalance);
-    }
-}

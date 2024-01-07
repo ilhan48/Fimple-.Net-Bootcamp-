@@ -1,8 +1,9 @@
 ﻿using Fimple.FinalCase.Core.Utilities.JWT;
+using Fimple.FinalCase.Core.Utilities.Responses;
 
 namespace Fimple.FinalCase.Core.Features.Users.Commands.UpdateFromAuth;
 
-public class UpdatedUserFromAuthResponse 
+public class UpdatedUserFromAuthResponse : IResponse
 {
     public int Id { get; set; }
     public string FirstName { get; set; }

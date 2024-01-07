@@ -2,10 +2,11 @@ using Fimple.FinalCase.Core.Entities;
 using Fimple.FinalCase.Core.Features.Accounts.Constants;
 using Fimple.FinalCase.Core.Ports.Driven;
 using Fimple.FinalCase.Core.Utilities.Exceptions.Types;
+using Fimple.FinalCase.Core.Utilities.Rules;
 
 namespace Fimple.FinalCase.Core.Features.Accounts.Rules;
 
-public class AccountBusinessRules
+public class AccountBusinessRules : BaseBusinessRules
 {
     private readonly IAccountRepository _accountRepository;
 
@@ -30,7 +31,7 @@ public class AccountBusinessRules
         );
         await AccountShouldExistWhenSelected(account);
     }
-    
+
     public Task CheckMinimumBalance(Account account, decimal minimumBalance)
     {
         if (account.Balance < minimumBalance)
@@ -39,7 +40,6 @@ public class AccountBusinessRules
         }
         return Task.CompletedTask;
     }
-    
     public Task CheckNegativeBalance(Account account)
     {
         if (account.Balance < 0)

@@ -1,6 +1,6 @@
+using Fimple.FinalCase.Core.Features.Auth.Commands.RevokeToken;
 using AutoMapper;
 using Fimple.FinalCase.Core.Entities.Identity;
-using Fimple.FinalCase.Core.Features.Auth.Commands.RevokeToken;
 
 namespace Fimple.FinalCase.Core.Features.Auth.Profiles;
 

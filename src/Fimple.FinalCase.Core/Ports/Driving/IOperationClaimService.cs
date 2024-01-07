@@ -1,9 +1,9 @@
-﻿using System.Linq.Expressions;
-using Fimple.FinalCase.Core.Entities.Identity;
+﻿using Fimple.FinalCase.Core.Entities.Identity;
 using Fimple.FinalCase.Core.Utilities.Paging;
 using Microsoft.EntityFrameworkCore.Query;
+using System.Linq.Expressions;
 
-namespace Fimple.FinalCase.Core.Ports.Driven;
+namespace Fimple.FinalCase.Core.Ports.Driving;
 
 public interface IOperationClaimService
 {

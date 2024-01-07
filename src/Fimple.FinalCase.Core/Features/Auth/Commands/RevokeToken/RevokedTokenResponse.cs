@@ -1,6 +1,8 @@
-﻿namespace Fimple.FinalCase.Core.Features.Auth.Commands.RevokeToken;
+﻿using Fimple.FinalCase.Core.Utilities.Responses;
 
-public class RevokedTokenResponse
+namespace Fimple.FinalCase.Core.Features.Auth.Commands.RevokeToken;
+
+public class RevokedTokenResponse : IResponse
 {
     public int Id { get; set; }
     public string Token { get; set; }

@@ -10,7 +10,10 @@ public class User : BaseAuditableEntity<int>
     public byte[] PasswordSalt { get; set; }
     public byte[] PasswordHash { get; set; }
     public bool Status { get; set; }
-    
+
+
+    public virtual ICollection<UserOperationClaim> UserOperationClaims { get; set; } = null!;
+    public virtual ICollection<RefreshToken> RefreshTokens { get; set; } = null!;
     public virtual ICollection<Account> Accounts { get; set; }
     public virtual ICollection<AutomaticPayment> AutomaticPayments { get; set; }
     public virtual ICollection<CreditApplication> CreditApplications { get; set; }

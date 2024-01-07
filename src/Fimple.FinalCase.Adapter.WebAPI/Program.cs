@@ -1,6 +1,7 @@
-using Carter;
-using Core.WebAPI.Extension.Swagger;
+using Fimple.FinalCase.Adapter.PostgreSQL;
 using Fimple.FinalCase.Adapter.WebAPI;
+using Fimple.FinalCase.Adapter.WebAPI.Extensions;
+using Fimple.FinalCase.Core;
 using Fimple.FinalCase.Core.Utilities.Encryption;
 using Fimple.FinalCase.Core.Utilities.JWT;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -13,10 +14,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddCoreServices();
+builder.Services.AddPostgreSQLServices(builder.Configuration);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddCarter();
 builder.Services.AddMediatR(config => config.RegisterServicesFromAssembly(typeof(Program).Assembly));
 
 const string tokenOptionsConfigurationSection = "TokenOptions";
@@ -84,7 +86,6 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapCarter();
 app.MapControllers();
 const string webApiConfigurationSection = "WebAPIConfiguration";
 WebApiConfiguration webApiConfiguration =

@@ -1,33 +1,6 @@
-using System.Linq.Expressions;
-using Fimple.FinalCase.Core.DTOs;
-using Fimple.FinalCase.Core.Entities.Identity;
-using Fimple.FinalCase.Core.Utilities.Paging;
-using Microsoft.EntityFrameworkCore.Query;
+﻿using Fimple.FinalCase.Core.Entities.Identity;
+using Fimple.FinalCase.Core.Ports.Driven.Common;
 
 namespace Fimple.FinalCase.Core.Ports.Driven;
 
-public interface IUserRepository
-{
-    Task<CreateUserDto> AddAsync(CreateUserDto createUserDto);
-    Task<DeleteUserDto> DeleteAsync(int id);
-    Task<ListUserDto?> UpdateAsync(int id, UpdateUserDto updateUserDto);
-    Task<ListUserDto?> GetAsync(
-        Expression<Func<ListUserDto, bool>> predicate,
-        Func<IQueryable<ListUserDto>, IIncludableQueryable<ListUserDto, object>>? include = null,
-        CancellationToken cancellationToken = default
-    );
-
-    Task<IPaginate<ListUserDto>> GetListAsync(
-        Expression<Func<ListUserDto, bool>>? predicate = null,
-        Func<IQueryable<ListUserDto>, IOrderedQueryable<ListUserDto>>? orderBy = null,
-        Func<IQueryable<ListUserDto>, IIncludableQueryable<ListUserDto, object>>? include = null,
-        int index = 0,
-        int size = 10,
-        CancellationToken cancellationToken = default
-    );
-
-    Task<bool> AnyAsync(
-        Expression<Func<ListUserDto, bool>>? predicate = null,
-        CancellationToken cancellationToken = default
-    );
-}
+public interface IUserRepository : IAsyncRepository<User, int> { }

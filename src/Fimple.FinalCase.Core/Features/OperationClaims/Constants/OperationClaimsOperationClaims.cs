@@ -1,4 +1,5 @@
 ﻿namespace Fimple.FinalCase.Core.Features.OperationClaims.Constants;
+
 public static class OperationClaimsOperationClaims
 {
     public const string Admin = "operationclaims.admin";

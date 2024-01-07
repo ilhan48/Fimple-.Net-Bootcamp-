@@ -1,6 +1,8 @@
+using Fimple.FinalCase.Core.Utilities.Responses;
+
 namespace Fimple.FinalCase.Core.Features.Users.Commands.Update;
 
-public class UpdatedUserResponse 
+public class UpdatedUserResponse : IResponse
 {
     public int Id { get; set; }
     public string FirstName { get; set; }

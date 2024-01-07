@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 
 namespace Fimple.FinalCase.Core.Features.Users.Commands.UpdateFromAuth;
+
 public class UpdateUserFromAuthCommandValidator : AbstractValidator<UpdateUserFromAuthCommand>
 {
     public UpdateUserFromAuthCommandValidator()

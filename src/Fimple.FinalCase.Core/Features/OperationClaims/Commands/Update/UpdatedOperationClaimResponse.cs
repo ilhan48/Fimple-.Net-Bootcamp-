@@ -1,5 +1,8 @@
+using Fimple.FinalCase.Core.Utilities.Responses;
+
 namespace Fimple.FinalCase.Core.Features.OperationClaims.Commands.Update;
-public class UpdatedOperationClaimResponse
+
+public class UpdatedOperationClaimResponse : IResponse
 {
     public int Id { get; set; }
     public string Name { get; set; }

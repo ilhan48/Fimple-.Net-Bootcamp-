@@ -3,7 +3,7 @@ using MediatR;
 
 namespace Fimple.FinalCase.Core.Features.Auth.Commands.Login;
 
-public partial class LoginCommand : IRequest<LoggedResponse>
+public class LoginCommand : IRequest<LoggedResponse>
 {
     public UserForLoginDto UserForLoginDto { get; set; }
     public string IpAddress { get; set; }

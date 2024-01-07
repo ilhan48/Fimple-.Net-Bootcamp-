@@ -2,10 +2,11 @@ using Fimple.FinalCase.Core.Entities.Identity;
 using Fimple.FinalCase.Core.Features.UserOperationClaims.Constants;
 using Fimple.FinalCase.Core.Ports.Driven;
 using Fimple.FinalCase.Core.Utilities.Exceptions.Types;
+using Fimple.FinalCase.Core.Utilities.Rules;
 
 namespace Fimple.FinalCase.Core.Features.UserOperationClaims.Rules;
 
-public class UserOperationClaimBusinessRules 
+public class UserOperationClaimBusinessRules : BaseBusinessRules
 {
     private readonly IUserOperationClaimRepository _userOperationClaimRepository;
 

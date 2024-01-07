@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Adapter.PostgreSQL/Fimple.FinalCase.Adapter.PostgreSQL.csproj": {}
+    "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Adapter.PostgreSQL\\Fimple.FinalCase.Adapter.PostgreSQL.csproj": {}
   },
   "projects": {
-    "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Adapter.PostgreSQL/Fimple.FinalCase.Adapter.PostgreSQL.csproj": {
+    "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Adapter.PostgreSQL\\Fimple.FinalCase.Adapter.PostgreSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Adapter.PostgreSQL/Fimple.FinalCase.Adapter.PostgreSQL.csproj",
+        "projectUniqueName": "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Adapter.PostgreSQL\\Fimple.FinalCase.Adapter.PostgreSQL.csproj",
         "projectName": "Fimple.FinalCase.Adapter.PostgreSQL",
-        "projectPath": "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Adapter.PostgreSQL/Fimple.FinalCase.Adapter.PostgreSQL.csproj",
-        "packagesPath": "/Users/ilhanodun/.nuget/packages/",
-        "outputPath": "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Adapter.PostgreSQL/obj/",
+        "projectPath": "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Adapter.PostgreSQL\\Fimple.FinalCase.Adapter.PostgreSQL.csproj",
+        "packagesPath": "C:\\Users\\ilhan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Adapter.PostgreSQL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ilhanodun/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ilhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/Fimple.FinalCase.Core.csproj": {
-                "projectPath": "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/Fimple.FinalCase.Core.csproj"
+              "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Core\\Fimple.FinalCase.Core.csproj": {
+                "projectPath": "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Core\\Fimple.FinalCase.Core.csproj"
               }
             }
           }
@@ -46,9 +48,19 @@
               "target": "Package",
               "version": "[7.0.14, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
             }
           },
           "imports": [
@@ -67,26 +79,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/Fimple.FinalCase.Core.csproj": {
+    "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Core\\Fimple.FinalCase.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/Fimple.FinalCase.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Core\\Fimple.FinalCase.Core.csproj",
         "projectName": "Fimple.FinalCase.Core",
-        "projectPath": "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/Fimple.FinalCase.Core.csproj",
-        "packagesPath": "/Users/ilhanodun/.nuget/packages/",
-        "outputPath": "/Users/ilhanodun/Desktop/Fimple.NetBootcamp/src/Fimple.FinalCase.Core/obj/",
+        "projectPath": "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Core\\Fimple.FinalCase.Core.csproj",
+        "packagesPath": "C:\\Users\\ilhan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilhan\\Desktop\\Fimple.FinalCase\\src\\Fimple.FinalCase.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ilhanodun/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ilhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -106,6 +120,10 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
             },
@@ -166,7 +184,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

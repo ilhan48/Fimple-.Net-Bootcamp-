@@ -3,7 +3,6 @@ using Fimple.FinalCase.Core.Ports.Driven.Common;
 
 namespace Fimple.FinalCase.Core.Ports.Driven;
 
-public interface IAccountRepository : IAsyncRepository<Account>
-{
-    
+public interface IAccountRepository : IAsyncRepository<Account, int>
+{ 
 }

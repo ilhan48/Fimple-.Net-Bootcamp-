@@ -25,3 +25,4 @@ public class UpdateUserFromAuthCommand : IRequest<UpdatedUserFromAuthResponse>
         Password = password;
     }
 }
+

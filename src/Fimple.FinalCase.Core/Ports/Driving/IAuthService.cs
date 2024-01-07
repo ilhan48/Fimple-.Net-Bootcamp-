@@ -1,4 +1,4 @@
-using Fimple.FinalCase.Core.Entities.Identity;
+﻿using Fimple.FinalCase.Core.Entities.Identity;
 using Fimple.FinalCase.Core.Utilities.JWT;
 
 namespace Fimple.FinalCase.Core.Ports.Driving;

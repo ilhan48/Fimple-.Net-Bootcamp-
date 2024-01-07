@@ -1,6 +1,6 @@
+﻿using Fimple.FinalCase.Core.Utilities.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Fimple.FinalCase.Core.Utilities.Extensions;
 
 namespace Fimple.FinalCase.Adapter.WebAPI.Controllers;
 
@@ -21,7 +21,8 @@ public class BaseController : ControllerBase
                 ?? throw new InvalidOperationException("IP address cannot be retrieved from request.");
         return ipAddress;
     }
-    protected int getUserIdFromRequest() 
+
+    protected int getUserIdFromRequest() //todo authentication behavior?
     {
         int userId = HttpContext.User.GetUserId();
         return userId;
